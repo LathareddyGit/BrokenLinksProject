@@ -54,7 +54,7 @@ public class BrokenLinksTest {
 				try {
 					URL url = new URL(hrefLink);
 					HttpURLConnection con = (HttpURLConnection) url.openConnection();
-					if(con.getResponseCode()==404) {
+					if(con.getResponseCode()>=400) {
 						BrokenLinksObjs obj = new BrokenLinksObjs();
 						obj.setEle(eachLink);
 						obj.setResponseCode(con.getResponseCode());
