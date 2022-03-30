@@ -1,0 +1,19 @@
+package appwrk;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+import testcases.mytheresa.BrowserSetting;
+
+public class BrokenLinksTest {
+	
+	@Test
+	public void test1() {
+		System.out.println("In test1");
+		BrowserSetting bs = new BrowserSetting();
+
+		WebDriver driver = bs.BrowserSettings();
+		driver.get("https://www.amazon.in");
+	}
+
+}

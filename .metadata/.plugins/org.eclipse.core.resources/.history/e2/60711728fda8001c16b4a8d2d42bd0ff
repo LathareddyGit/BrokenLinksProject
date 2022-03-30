@@ -1,0 +1,53 @@
+package amazon;
+
+public class Palindrome {
+
+	public static void main(String args[]) {
+		
+		System.out.println("hello ");
+		overloadMethod();
+		
+	}
+
+	public static void overloadMethod() {
+		
+		//10 9 8 7
+		//6 5 4
+		//3 2
+		//1
+		
+		int lineLength = 4, maxNum =10, tempLength = 4;
+		
+		
+			for(int j=maxNum;j>0;j--) {
+				if(tempLength<=lineLength && tempLength>0) {
+				System.out.print(j+" ");
+				tempLength--;
+				
+				}else {
+					
+					lineLength--;
+					tempLength = lineLength;
+					System.out.println();
+				}
+				
+			}
+		
+		
+	}
+	
+	public void overloadMethod(int a, int b) {
+		
+	}
+	
+	public void overloadMethod(String str) {
+		
+//		* * * *
+//		* * *
+//		* *
+//		*
+		
+	}
+	
+	
+}

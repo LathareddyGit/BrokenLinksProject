@@ -1,0 +1,9 @@
+package brokenLinksMap;
+
+public class BrokenLinksObjs {
+
+	private static int responseCode;
+	private static String url;
+	
+	
+}

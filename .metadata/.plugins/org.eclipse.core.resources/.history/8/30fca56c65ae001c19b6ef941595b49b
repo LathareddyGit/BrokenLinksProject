@@ -1,0 +1,15 @@
+package amazon;
+
+public class ObjChk implements ObjectChk {
+	
+	public static void main(String args[]) {
+		ObjectChk obj = new ObjectChk();
+	}
+
+	@Override
+	public void methodA() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,49 @@
+package testcases.mytheresa;
+
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+
+import com.relevantcodes.extentreports.IReporter;
+import com.relevantcodes.extentreports.Report;
+import com.relevantcodes.extentreports.model.Test;
+
+public class TestNGTrails implements IReporter {
+
+	@Override
+	public void start(Report report) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void stop() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void flush() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void addTest(Test test) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setTestRunnerLogs() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	@AfterMethod
+	public void tearDown(ITestResult result) {
+		if(ITestResult.FAILURE == result.getStatus()) {
+			Screenshot.captureScreenshot(result.getName());
+		}
+	}
+
+}

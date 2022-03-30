@@ -1,0 +1,24 @@
+package amazon;
+
+public class Palindrome {
+
+	public static void main(String args[]) {
+		
+		System.out.println("hello ");
+		
+		int x = 153;
+		int y = x, temp, total;
+		System.out.println("y::::"+y%10);
+		
+		
+		while(y>0) {
+			temp = y%10;
+			total += y*y*y;
+			y = y/10;
+		}
+		
+		
+	}
+	
+	
+}

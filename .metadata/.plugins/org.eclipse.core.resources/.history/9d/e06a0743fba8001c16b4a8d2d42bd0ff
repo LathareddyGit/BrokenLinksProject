@@ -1,0 +1,26 @@
+package amazon;
+
+public class Palindrome {
+
+	public static void main(String args[]) {
+		
+		System.out.println("hello ");
+		
+	}
+
+	public void overloadMethod() {
+		
+	}
+	
+	public void overloadMethod(int a, int b) {
+		
+	}
+	
+	public void overloadMethod(String str) {
+		
+	}
+	
+	public int overloadMethod(String str) {
+		return 1;
+	}
+}

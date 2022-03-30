@@ -1,0 +1,30 @@
+package amazon;
+
+public class ObjChk implements ObjectChk {
+	
+	public static void main(String args[]) {
+		ObjectChk obj = new ObjChk();
+		
+		obj.methodA();
+		
+		add(20, 30);
+		
+		
+	}
+
+	@Override
+	public void methodA() {
+		// TODO Auto-generated method stub
+		System.out.println("hello");
+		
+	}
+	
+	public static void add(int a, int b) {
+		System.out.println("a+b"+(a+b));
+	}
+	
+	public static void sub(int a , int b) {
+		System.out.println("a-b"+(a-b));
+	}
+
+}

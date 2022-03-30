@@ -1,0 +1,7 @@
+package amazon;
+
+public interface ObjectChk {
+	
+	public void methodA();
+
+}

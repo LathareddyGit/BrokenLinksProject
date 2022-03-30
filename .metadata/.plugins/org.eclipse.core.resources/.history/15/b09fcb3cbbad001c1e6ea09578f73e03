@@ -1,0 +1,15 @@
+package amazon;
+
+public class Palindrome {
+
+	public static void main(String args[]) {
+		
+		System.out.println("hello ");
+		
+		String str = "aaa bb cccc";
+		
+		
+	}
+	
+	
+}

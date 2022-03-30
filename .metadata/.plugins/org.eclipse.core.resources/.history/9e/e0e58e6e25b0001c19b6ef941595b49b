@@ -1,0 +1,44 @@
+package appwrk;
+
+import java.net.URL;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+import browsersettings.*;
+
+public class BrokenLinksTest {
+	
+	@Test
+	public void test1() {
+		System.out.println("In test1");
+		BrowserSetting bs = new BrowserSetting();
+
+		WebDriver driver = bs.BrowserSettings();
+		
+		List<WebElement> allLinks = driver.findElements(By.xpath("//a"));
+		
+		System.out.println("Total links on home page are"+allLinks.size());
+		
+		
+		
+		for(WebElement eachLink: allLinks) {
+			
+			String hrefLink = null;
+			
+			try {
+				hrefLink = eachLink.getAttribute("href");	
+			}catch(Exception e) {
+				
+			}
+			
+			URL url = new URL(eachLink);
+			
+		}
+		
+	}
+
+}

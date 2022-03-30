@@ -1,0 +1,31 @@
+package amazon;
+
+public class Palindrome {
+
+	public static void main(String args[]) {
+		
+		System.out.println("hello ");
+		
+		String str = "aaabbcccc";
+		int count = 0;
+		String strikeOutChars = "";
+		
+		for(int i = 0; i< str.length(); i++) {
+			System.out.println("::::::::::::"+str.charAt(i));
+			count =0;
+			
+			if(!strikeOutChars.contains(str.charAt(i)+""))
+			for(int j=0;j< str.length();j++) {
+				if(j != i) {
+					if(str.charAt(j)==str.charAt(i))
+						count++;
+						
+				}
+			}
+		}
+		
+		
+	}
+	
+	
+}

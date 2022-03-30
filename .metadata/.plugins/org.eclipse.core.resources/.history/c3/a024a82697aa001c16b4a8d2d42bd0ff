@@ -1,0 +1,32 @@
+package amazon;
+
+public class Palindrome {
+
+	public static void main(String args[]) {
+		
+		System.out.println("hello ");
+		
+		int x = 153;
+		int y = x, temp, total =0;
+		System.out.println("y::::"+y%10);
+		
+		
+		while(y>0) {
+			temp = y%10;
+			total += temp*temp*temp;
+			y = y/10;
+		}
+		
+		System.out.println("total value :::"+total);
+		
+		if(total == x) {
+			System.out.println("Given number is amstrong number");
+		}else {
+			System.out.println("Not amstrong");
+		}
+		
+		
+	}
+	
+	
+}
